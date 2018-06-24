@@ -75,6 +75,8 @@
 > * [TYPE key](https://www.yiibai.com/redis/keys_type.html)
 >
 >   返回存储在键中的值的数据类型
+>
+> ### Redis 字符串
 
 
 
