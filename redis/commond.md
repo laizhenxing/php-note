@@ -89,6 +89,26 @@
 > *  [GETRANGE key start end](https://www.yiibai.com/redis/strings_getrange.html)
 >
 >    获取存储在键上的字符串的子字符串
+>
+> * [GETSET key value](https://www.yiibai.com/redis/strings_getset.html)
+>
+>    设置键的字符串并返回其旧值
+>
+> * [GETBIT key offset](https://www.yiibai.com/redis/strings_getbit.html)
+>
+>    返回在键出存储的字符串值中偏移出的位值
+>
+> * [MGET key1 [key2...]](https://www.yiibai.com/redis/strings_mget.html)
+>
+>    获取指定键的值列表，返回数组
+>
+> * [SETBIT key offset value](https://www.yiibai.com/redis/strings_setbit.html)
+>
+>    存储在键上的字符串值中设置或清除偏移处的位
+>
+> * [SETEX key seconds value](https://www.yiibai.com/redis/strings_setex.html)
+>
+>    使用键和到期时间设置值
 
 
 
