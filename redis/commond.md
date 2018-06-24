@@ -77,6 +77,18 @@
 >     返回存储在键中的值的数据类型
 >
 > ### Redis 字符串
+>
+> * [SET key value](https://www.yiibai.com/redis/strings_set.html)
+>
+>    设置指定键的值
+>
+> *  [GET key](https://www.yiibai.com/redis/strings_get.html)
+>
+>    获取指定键的值
+>
+> *  [GETRANGE key start end](https://www.yiibai.com/redis/strings_getrange.html)
+>
+>    获取存储在键上的字符串的子字符串
 
 
 
