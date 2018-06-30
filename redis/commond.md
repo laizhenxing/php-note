@@ -48,7 +48,7 @@
 >
 >     查找与指定模式匹配的所有键值
 >
-> *  [MOVE key db])(https://www.yiibai.com/redis/keys_move.html)
+> *  [MOVE key db](https://www.yiibai.com/redis/keys_move.html)
 >
 >     将键移动到另一个数据库
 >
