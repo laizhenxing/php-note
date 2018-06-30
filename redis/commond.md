@@ -82,11 +82,11 @@
 >
 >    设置指定键的值
 >
-> *  [GET key](https://www.yiibai.com/redis/strings_get.html)
+> * [GET key](https://www.yiibai.com/redis/strings_get.html)
 >
 >    获取指定键的值
 >
-> *  [GETRANGE key start end](https://www.yiibai.com/redis/strings_getrange.html)
+> * [GETRANGE key start end](https://www.yiibai.com/redis/strings_getrange.html)
 >
 >    获取存储在键上的字符串的子字符串
 >
@@ -109,6 +109,174 @@
 > * [SETEX key seconds value](https://www.yiibai.com/redis/strings_setex.html)
 >
 >    使用键和到期时间设置值
+>
+> * [SETNX key value](https://www.yiibai.com/redis/strings_setnx.html)
+>
+>     设置键的值，仅当键不存在时
+>
+> * [SETRANGE key offset value](https://www.yiibai.com/redis/strings_setrange.html)
+>
+>     在指定偏移出开始的键处覆盖字符串的一部分
+>
+> * [STRLEN key](https://www.yiibai.com/redis/strings_strlen.html)
+>
+>     获取存储在键中的值的长度
+>
+> * [MSET key value [key value...]](https://www.yiibai.com/redis/strings_mset.html)
+>
+>     为多个键分别设置它们的值
+>
+> * [MSETNX key value [key value]](https://www.yiibai.com/redis/strings_msetnx.html)
+>
+>     为多个键分别设置他们的值，仅当键不存在时
+>
+> * [PSETEX key millisenconds value](https://www.yiibai.com/redis/strings_psetex.html)
+>
+>     设置键的值和到期时间(以毫秒为单位)
+>
+> * [INCR key](https://www.yiibai.com/redis/strings_incr.html)
+>
+>     键键的整数值加1，返回一个整数
+>
+> * [INCRBY key increment](https://www.yiibai.com/redis/strings_incrby.html)
+>
+>     将键的整数值按给定的数值增加 （increment 只能为）
+>
+> * [INCRBYFLOAT key increment](https://www.yiibai.com/redis/strings_incrbyfloat.html)
+>
+>     将间的浮点数值按给定的数值增加（increment 可以为整数，可以为浮点数）
+>
+> * [DECR key](https://www.yiibai.com/redis/strings_decr.html)
+>
+>     将键的整数值减1
+>
+> * [DECRBY key decrement](https://www.yiibai.com/redis/strings_decrby.html)
+>
+>     按给定的数值减少键的整数值
+>
+> * [APPEND key value](https://www.yiibai.com/redis/strings_append.html)
+>
+>     将指定值附加到键
+>
+> ### Redis 哈希(hash)
+>
+> * [HSET key field value](https://www.yiibai.com/redis/hashes_hset.html)
+>
+>     设置散列字段的字符串（给已存在的键赋值会覆盖原有的值）
+>
+> * [HDEL key field1 [field2]](https://www.yiibai.com/redis/hashes_hdel.html)
+>
+>     删除一个或多个哈希字段
+>
+> * [HGET key field](https://www.yiibai.com/redis/hashes_hget.html)
+>
+>     获取存储在指定键的哈希字段的值
+>
+> * [HEXISTS key field](https://www.yiibai.com/redis/hashes_hexists.html)
+>
+>     判断是否存在散列字段
+>
+> * [HGETALL key](https://www.yiibai.com/redis/hashes_hgetall.html)
+>
+>     获取存在指定键的哈希中的所有字段和值
+>
+> * [HKEYS key](https://www.yiibai.com/redis/hashes_hkeys.html)
+>
+>     获取哈希中所有的字段
+>
+> * [HLEN key](https://www.yiibai.com/redis/hashes_hlen.html)
+>
+>     获取三列中的字段数量
+>
+> * [HVALS key](https://www.yiibai.com/redis/hashes_hvals.html)
+>
+>     获取哈希中的所有值
+>
+> * [HMSET key field1 value1 [field2 value2]](https://www.yiibai.com/redis/hashes_hmset.html)
+>
+>     为多个哈希字段分别设置它们的值
+>
+> * [HMGET key field1 [field2]](https://www.yiibai.com/redis/hashes_hmget.html)
+>
+>     获取所有给定的哈希字段的值
+>
+> * [HSETNX key field value](https://www.yiibai.com/redis/hashes_hsetnx.html)
+>
+>     仅当字段不存在时，才设置散列字段的值
+>
+> * [HINCRBY key field increment](https://www.yiibai.com/redis/hashes_hincrby.html)
+>
+>     将哈希字段的整数值按给定数字增加
+>
+> * [HINCRBYFLOAT key field increment](https://www.yiibai.com/redis/hashes_hincrbyfloat.html)
+>
+>     将哈希字段的浮点数值按给定的数字增加
+>
+> ### Redis 列表命令
+>
+> * [LPUSH key value1 [value2]](https://www.yiibai.com/redis/lists_lpush.html)
+>
+>     将一个值或者多个值添加到列表
+>
+> * [LPOP key](https://www.yiibai.com/redis/lists_lpop.html)
+>
+>      删除并获取列表中的第一个元素 
+>
+> * [LRANGE key start stop](https://www.yiibai.com/redis/lists_lrange.html)
+>
+>      从列表中获取一系列元素
+>
+> * [LLEN key](https://www.yiibai.com/redis/lists_llen.html)
+>
+>      获取列表的长度
+>
+> * [LPUSHX key value](https://www.yiibai.com/redis/lists_lpushx.html)
+>
+>      仅当列表存在时，才向列表添加值
+>
+> * [LSET key index value](https://www.yiibai.com/redis/lists_lset.html)
+>
+>      通过索引在列表中设置元素的值
+>
+> * [LRTIM key start stop](https://www.yiibai.com/redis/lists_ltrim.html)
+>
+>      修剪列表的指定范围
+>
+> * [LINDEX key index](https://www.yiibai.com/redis/lists_lindex.html)
+>
+>      通过索引从列表中获取元素
+>
+> * [LINSERT key BEFORE/AFTER pivot value](https://www.yiibai.com/redis/lists_linsert.html)
+>
+>      在列表中的另一个元素之前或之后插入元素
+>
+> * [BLPOP key1 [key2] timeout](https://www.yiibai.com/redis/lists_blpop.html)
+>
+>      删除并获取列表中的第一个元素，或阻塞， 直到有一个元素可用
+>
+> * [BRPOP key1 [key2 ] timeout](http://www.yiibai.com/redis/lists_brpop.html)
+>
+>      删除并获取列表中的最后一个元素，或阻塞，直到有一个元素可用 
+>
+> * [BRPOPLPUSH source destination timeout](http://www.yiibai.com/redis/lists_brpoplpush.html) 
+>
+>      从列表中弹出值，将其推送到另一个列表并返回它; 或阻塞，直到一个可用 
+>
+> * [RPUSH key value1 [value2]](http://www.yiibai.com/redis/lists_rpush.html)  
+>
+>      将一个值或多个值附加到这个列表
+>
+> * [RPOP key](http://www.yiibai.com/redis/lists_rpop.html) 
+>
+>      删除并获取列表中的最后一个元素 
+>
+> * [RPOPLPUSH source destination](http://www.yiibai.com/redis/lists_rpoplpush.html) 
+>
+>      删除列表中的最后一个元素，将其附加到另一个列表并返回 
+>
+> * [RPUSHX key value](http://www.yiibai.com/redis/lists_rpushx.html) 
+>
+>      仅当列表存在时才将值附加到列表 
 
 
 
